@@ -39,23 +39,23 @@
 :root {
 	interpolate-size: allow-keywords;
 
-	--background: linear-gradient(45deg, #0c0a09 0%, #1c1917 45%, #0c0a09 100%);
-	--header: linear-gradient(90deg, #1c1917e0, #2dd4bf, #0c0a09);
-	--btn-accent: linear-gradient(135deg, #fb923c, #ea580c);
-	--btn-inherit: #fff7ed;
-	--accent: linear-gradient(135deg, #f97316, #c2410c);
-	--sub-title: linear-gradient(-135deg, #2dd4bf30, #042f2e);
-	--gift: #f0fdfae1;
-	--gift-bg: rgba(251, 146, 60, 0.1);
-	--gift-btn: linear-gradient(135deg, #9a3412, #431407);
-	--border-radius: 10px;
-	--container: #0c0a09;
-	--table: linear-gradient(180deg, #1c1917, #0c0a09);
-	--minus: #38bdf8;
-	--shadow: #fb923c50;
-	--second-shadow: #ea580c;
-	--text-shadow: #2dd4bf;
-	--list-bg: linear-gradient(90deg, rgba(45, 212, 191, 0.1), rgba(251, 146, 60, 0.1));
+	--background: linear-gradient(45deg, #051a14 0%, #064e3b 45%, #051a14 100%);
+	--header: linear-gradient(90deg, #064e3b, #34d399, #051a14);
+	--btn-accent: linear-gradient(135deg, #10b981, #065f46);
+	--btn-inherit: #f0fdf4;
+	--accent: linear-gradient(135deg, #059669, #064e3b);
+	--sub-title: linear-gradient(-135deg, #34d39930, #022c22);
+	--gift: #f0fdfa;
+	--gift-bg: rgba(16, 185, 129, 0.1);
+	--gift-btn: linear-gradient(135deg, #064e3b, #02140f);
+	--border-radius: 14px;
+	--container: #051a14;
+	--table: linear-gradient(180deg, #064e3b, #051a14);
+	--minus: #fb7185;
+	--shadow: rgba(16, 185, 129, 0.3);
+	--second-shadow: #059669;
+	--text-shadow: #10b981;
+	--list-bg: linear-gradient(90deg, rgba(52, 211, 153, 0.1), rgba(6, 95, 70, 0.1));
 }
 
 * {
@@ -193,6 +193,7 @@ header {
 	justify-content: space-between;
 	background: var(--header);
 	box-shadow: 0 3px 3px var(--shadow);
+	border-radius: var(--border-radius);
 	max-width: 100vw;
 	margin: 0 auto;
 	position: sticky;
@@ -217,6 +218,7 @@ header img {
 	padding: 10px 20px;
 	font-size: 1rem;
 	border: 1px solid var(--btn-inherit);
+	border-radius: var(--border-radius);
 	margin-right: 5px;
 	font-weight: 700;
 	transition: all 0.3s ease-in-out;
@@ -227,6 +229,7 @@ header img {
 	font-size: 1rem;
 	background: var(--btn-accent);
 	box-shadow: 3px 3px 3px var(--gift);
+	border-radius: var(--border-radius);
 	text-align: center;
 	font-weight: 700;
 	transition: all 0.3s ease;
@@ -358,7 +361,8 @@ header img {
 	padding-bottom: 10px;
 	margin: 30px auto;
 	background: var(--container);
-	box-shadow: 0 0 13px var(--second-shadow);
+	border-radius: var(--border-radius);
+	box-shadow: 5px 5px 5px var(--container);
 }
 
 .container:nth-child(odd) {
@@ -396,6 +400,7 @@ header img {
 	position: relative;
 	padding-left: 30px;
 	margin-bottom: 10px;
+	border-radius: var(--border-radius);
 	background: var(--btn-accent);
 	overflow: hidden;
 }
